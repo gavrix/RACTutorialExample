@@ -8,27 +8,23 @@
 
 #import "SRGTableViewCell.h"
 
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <libextobjc/EXTScope.h>
+
+@interface SRGTableViewCell ()
+@property (nonatomic) SRGCellViewModel *viewModel;
+@property (strong, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *userpicImageView;
+
+@end
+
 @implementation SRGTableViewCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
 
-- (void)awakeFromNib
-{
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)awakeFromNib {
+	self.viewModel = [SRGCellViewModel new];
+	RAC(self, userpicImageView.image) = RACObserve(self, viewModel.image);
+	RAC(self, usernameLabel.text) = RACObserve(self, viewModel.username);
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRGViewController : UIViewController
+@interface SRGViewController : UITableViewController
 
 @end

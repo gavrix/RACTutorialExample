@@ -10,4 +10,6 @@
 
 @interface SRGViewModel : NSObject
 
+@property (nonatomic, readonly) NSArray *users;
+
 @end

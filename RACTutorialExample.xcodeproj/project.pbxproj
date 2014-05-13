@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1432F64DB267448284DEB59F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 268EC0C2F3EC448B83FF43B2 /* libPods.a */; };
 		74E9C5441921C9BD000F177A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9C5431921C9BD000F177A /* Foundation.framework */; };
 		74E9C5461921C9BD000F177A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9C5451921C9BD000F177A /* CoreGraphics.framework */; };
 		74E9C5481921C9BD000F177A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9C5471921C9BD000F177A /* UIKit.framework */; };
@@ -21,6 +22,9 @@
 		74E9C5651921C9BE000F177A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E9C5471921C9BD000F177A /* UIKit.framework */; };
 		74E9C56D1921C9BE000F177A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74E9C56B1921C9BE000F177A /* InfoPlist.strings */; };
 		74E9C56F1921C9BE000F177A /* RACTutorialExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E9C56E1921C9BE000F177A /* RACTutorialExampleTests.m */; };
+		74E9C57A1921CCEF000F177A /* SRGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E9C5791921CCEF000F177A /* SRGTableViewCell.m */; };
+		74E9C57D1921CD1B000F177A /* SRGViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E9C57C1921CD1B000F177A /* SRGViewModel.m */; };
+		74E9C5801921CF27000F177A /* SRGCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E9C57F1921CF27000F177A /* SRGCellViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		268EC0C2F3EC448B83FF43B2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9C5401921C9BD000F177A /* RACTutorialExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACTutorialExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E9C5431921C9BD000F177A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		74E9C5451921C9BD000F177A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,13 @@
 		74E9C56A1921C9BE000F177A /* RACTutorialExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RACTutorialExampleTests-Info.plist"; sourceTree = "<group>"; };
 		74E9C56C1921C9BE000F177A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		74E9C56E1921C9BE000F177A /* RACTutorialExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTutorialExampleTests.m; sourceTree = "<group>"; };
+		74E9C5781921CCEF000F177A /* SRGTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGTableViewCell.h; sourceTree = "<group>"; };
+		74E9C5791921CCEF000F177A /* SRGTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGTableViewCell.m; sourceTree = "<group>"; };
+		74E9C57B1921CD1B000F177A /* SRGViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGViewModel.h; sourceTree = "<group>"; };
+		74E9C57C1921CD1B000F177A /* SRGViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGViewModel.m; sourceTree = "<group>"; };
+		74E9C57E1921CF27000F177A /* SRGCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGCellViewModel.h; sourceTree = "<group>"; };
+		74E9C57F1921CF27000F177A /* SRGCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGCellViewModel.m; sourceTree = "<group>"; };
+		C39BB36BDD344272A53EDCAF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,7 @@
 				74E9C5461921C9BD000F177A /* CoreGraphics.framework in Frameworks */,
 				74E9C5481921C9BD000F177A /* UIKit.framework in Frameworks */,
 				74E9C5441921C9BD000F177A /* Foundation.framework in Frameworks */,
+				1432F64DB267448284DEB59F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +99,7 @@
 				74E9C5681921C9BE000F177A /* RACTutorialExampleTests */,
 				74E9C5421921C9BD000F177A /* Frameworks */,
 				74E9C5411921C9BD000F177A /* Products */,
+				C39BB36BDD344272A53EDCAF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +119,7 @@
 				74E9C5451921C9BD000F177A /* CoreGraphics.framework */,
 				74E9C5471921C9BD000F177A /* UIKit.framework */,
 				74E9C5621921C9BE000F177A /* XCTest.framework */,
+				268EC0C2F3EC448B83FF43B2 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +134,12 @@
 				74E9C5591921C9BE000F177A /* SRGViewController.m */,
 				74E9C55B1921C9BE000F177A /* Images.xcassets */,
 				74E9C54A1921C9BE000F177A /* Supporting Files */,
+				74E9C5781921CCEF000F177A /* SRGTableViewCell.h */,
+				74E9C5791921CCEF000F177A /* SRGTableViewCell.m */,
+				74E9C57B1921CD1B000F177A /* SRGViewModel.h */,
+				74E9C57C1921CD1B000F177A /* SRGViewModel.m */,
+				74E9C57E1921CF27000F177A /* SRGCellViewModel.h */,
+				74E9C57F1921CF27000F177A /* SRGCellViewModel.m */,
 			);
 			path = RACTutorialExample;
 			sourceTree = "<group>";
@@ -159,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E9C5721921C9BE000F177A /* Build configuration list for PBXNativeTarget "RACTutorialExample" */;
 			buildPhases = (
+				D65C0EFE37F2491A9F1FA1C9 /* Check Pods Manifest.lock */,
 				74E9C53C1921C9BD000F177A /* Sources */,
 				74E9C53D1921C9BD000F177A /* Frameworks */,
 				74E9C53E1921C9BD000F177A /* Resources */,
+				C4F6A9BDCA2849B6BD876D3A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,12 +268,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C4F6A9BDCA2849B6BD876D3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65C0EFE37F2491A9F1FA1C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74E9C53C1921C9BD000F177A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E9C57A1921CCEF000F177A /* SRGTableViewCell.m in Sources */,
 				74E9C55A1921C9BE000F177A /* SRGViewController.m in Sources */,
+				74E9C57D1921CD1B000F177A /* SRGViewModel.m in Sources */,
+				74E9C5801921CF27000F177A /* SRGCellViewModel.m in Sources */,
 				74E9C5501921C9BE000F177A /* main.m in Sources */,
 				74E9C5541921C9BE000F177A /* SRGAppDelegate.m in Sources */,
 			);
@@ -374,6 +433,7 @@
 		};
 		74E9C5731921C9BE000F177A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39BB36BDD344272A53EDCAF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +447,7 @@
 		};
 		74E9C5741921C9BE000F177A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C39BB36BDD344272A53EDCAF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +518,7 @@
 				74E9C5741921C9BE000F177A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74E9C5751921C9BE000F177A /* Build configuration list for PBXNativeTarget "RACTutorialExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +527,7 @@
 				74E9C5771921C9BE000F177A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

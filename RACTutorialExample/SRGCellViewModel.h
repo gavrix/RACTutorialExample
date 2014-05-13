@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface SRGCellViewModel : NSObject
+@property (nonatomic) NSDictionary *userModel;
 
+@property (nonatomic) NSString *username;
+@property (nonatomic) UIImage *image;
 @end

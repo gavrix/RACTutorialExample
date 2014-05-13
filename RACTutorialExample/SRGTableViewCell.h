@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SRGTableViewCell : UITableViewCell
+#import "SRGCellViewModel.h"
 
+@interface SRGTableViewCell : UITableViewCell
+@property (nonatomic, readonly) SRGCellViewModel *viewModel;
 @end
